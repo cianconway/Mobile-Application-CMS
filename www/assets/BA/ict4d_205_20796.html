@@ -1,0 +1,197 @@
+<html> 
+
+		<head> 
+
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+
+
+			<title>Other reasons</title>
+
+			<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all">
+
+			<script type="text/javascript">
+
+	// Global variables
+			var lang = 'en';
+		window.addEventListener('touchstart',function(event) {
+
+			 document.getElementById('greenleftarrow').style.display= "block";
+
+	},false);
+
+
+	window.addEventListener('touchmove',function(event) {
+
+	},false);
+ 
+
+
+	window.addEventListener('touchend',function(event) {
+
+
+		document.getElementById('greenleftarrow').style.display= "none";
+
+	},false);
+
+
+function startExercise(ex){
+Android.startExercise(ex);
+}
+
+
+function showVideoFromModule(name){
+Android.showVideoFromModule(name);
+}
+
+
+
+
+// Pepijn: added:
+function moveBack() {
+window.location.href='ict4d_205_20795.html';
+}
+
+function moveForward() {
+window.location.href='ict4d_205_20797.html';
+}
+
+
+
+function showAndroidToast(toast) {
+//replace with pageid, if > 1 display else ignore, no popup on this page
+//Android.showToast("20796", toast);
+}
+
+function displayAlert() {
+Android.displayHomeClosePopup();
+}
+
+function inspectLang(){
+currentUrl = document.URL;
+
+if(currentUrl.indexOf("lang=nl")>0){
+//toggle dutch
+lang='nl';
+document.getElementById("en").style.display = 'none';
+document.getElementById("nl").style.display = 'block';
+// remove for se - document.getElementById("se").style.display = 'none';
+
+}else if(currentUrl.indexOf("lang=se")>0){
+//toggle swedish
+lang='se';
+document.getElementById("en").style.display = 'none';
+document.getElementById("nl").style.display = 'none';
+// remove for se - document.getElementById("se").style.display = 'block';
+
+}else if(currentUrl.indexOf("lang=en")>0){
+//toggle english
+lang='en';
+document.getElementById("en").style.display = 'block';
+document.getElementById("nl").style.display = 'none';
+//document.getElementById("se").style.display = 'none';
+}else{
+//the language set at the beginning
+var lang1 = Android.getLang();
+lang=lang1;
+window.location.href=currentUrl;
+}
+}
+
+function displayAlert1() {
+Android.displayAlert("calendar");
+}
+
+function moduleHome(){
+return 'ict4d_205_20794.html';
+}
+
+function navigate(url){
+window.location.href=url;
+}
+
+function getDocHeight(){
+ 
+var documentBody = document.getElementById('w1').offsetHeight;
+var windowHeight = window.innerHeight;
+
+if(documentBody>windowHeight-8){
+}else{
+document.getElementById('footer').style.position="absolute";
+document.getElementById('footer').style.bottom="1";
+}
+}
+
+//file content from server
+fileContent = Android.returnFileContent("20796").toString();
+
+var documentMaxHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+</script>
+
+<style>
+.greenleftarrow{
+position: absolute;
+z-index:10;
+background:#fff url(./images/greenleftarrow.jpg) no-repeat;
+left:20px;
+top:150px;
+height:140px;
+opacity:0.2;filter:alpha(opacity=20)
+}
+
+</style>
+</head>
+
+<body id="body1" onload="javascript:inspectLang(); getDocHeight()">
+<!-- this is the page content part here -->
+<div id="header"  
+>
+		 <a href="#" onclick="javascript:displayAlert();"><h1 class="logo"><img src="../images/logo.png" width=45 height=45 /></h1></a>
+		 <div class="page_title">
+	<a href="javascript:window.location.href='../ict4d_index.html';">MoodBuster</a></div>
+		 <ul class="top-right">
+			 <li><a href="javascript:window.location.href='ict4d_205_20794.html';" title="Go up one level"><img src="../images/icon_levelup.png" width="30" height="40" alt="Go up one level"></a></li>
+		</ul>
+	</div>
+<!-- BEGIN English -->
+	<div id="en" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_205_20782.html'">Behavioural Activation</a> (14/30)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Step 3: Change Yourself</div><div class="textPage"> 
+
+			<h1>Other reasons</h1> 
+Other reasons for doing too few pleasant activities are:<br /><br /><ul><li><a href="ict4d_205_20797.html?lang=en" ;="">you find it difficult to choose the right activity</a></li><li><a href="ict4d_205_20798.html?lang=en">your life is changed</a></li><li><a href="ict4d_205_20799.html?lang=en">you have feelings of anxiety or uncertainty in pleasant situations </a></li></ul> <br /><br />Click on one of them if you want to read more or go directly to the exercise: <a href="ict4d_205_20801.html?lang=en">Your plan.</a></div><!-- END <div class=textPage --></div><!-- END English -->
+
+<!-- BEGIN Dutch -->
+	<div id="nl" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_205_20782.html'">Plezierige Activiteiten</a> (14/30)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Stap 3: Veranderen</div><div class="textPage"> 
+
+			<h1>Andere redenen</h1> 
+<p>Andere redenen waarom mensen te weinig leuke dingen doen zijn de volgende:</p> <ul> <li>Ik heb weinig tijd voor leuke bezigheden.</li> <li>Ik vind het moeilijk de juiste bezigheden te bedenken.</li> <li>Sommige leuke dingen kan ik niet (meer) doen.</li> <li>Ik doe dingen die ik leuk vind, maar voel me gespannen of onzeker.</li> </ul> <p>&nbsp;</p> <p style="margin-bottom: 0.49cm;" lang="nl-NL"><span style="font-family: Calibri, sans-serif;"></span></p></div><!-- END <div class=textPage --></div><!-- END Dutch -->
+
+<!-- BEGIN Swedish -->
+	<div id="se" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_205_20782.html'"></a> (14/30)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Steg 3: Förändra dig själv</div><div class="textPage"> 
+
+			<h1>Andra skÃ¤l</h1> 
+Andra skÃ¤l till att du gÃ¶r fÃ¶r fÃ¥ positiva aktiviteter kan vara:<br />
+<ul><li><a href="ict4d_205_20797.html?lang=se">Du har svÃ¥rt att vÃ¤lja rÃ¤tt aktivitet<br /></a></li><li><a href="ict4d_205_20798.html?lang=se">Ditt liv har fÃ¶rÃ¤ndrats<br /></a></li><li><a href="ict4d_205_20799.html?lang=se">Du fÃ¥r kÃ¤nslor av Ã¥ngest eller osÃ¤kerhet nÃ¤r du utfÃ¶r dina positiva aktiviteter </a></li></ul>Klicka pÃ¥ en av dem om du vill lÃ¤sa mer, eller gÃ¥ direkt till Ã¶vningen: <a href="ict4d_205_20801.html?lang=se">Din plan.<br /></a></div><!-- END <div class=textPage --></div><!-- END Swedish -->
+<div id="footer"></div>
+	</body>
+	</html>

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container{
+height: 750px;
+width: 750px;
+}
+
+#left{
+	
+	float: left;
+	width: 250px;
+	height: 150px;
+}
+
+#right{
+	
+	float: right;
+	width: 250px;
+	height: 150px;
+	
+}
+

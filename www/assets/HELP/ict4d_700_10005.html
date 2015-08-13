@@ -1,0 +1,235 @@
+<html> 
+
+		<head> 
+
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+
+
+			<title>Symbols</title>
+
+			<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all">
+
+			<script type="text/javascript">
+
+	// Global variables
+			var lang = 'en';
+		window.addEventListener('touchstart',function(event) {
+
+			 document.getElementById('greenleftarrow').style.display= "block";
+
+	},false);
+
+
+	window.addEventListener('touchmove',function(event) {
+
+	},false);
+ 
+
+
+	window.addEventListener('touchend',function(event) {
+
+
+		document.getElementById('greenleftarrow').style.display= "none";
+
+	},false);
+
+
+function startExercise(ex){
+Android.startExercise(ex);
+}
+
+
+function showVideoFromModule(name){
+Android.showVideoFromModule(name);
+}
+
+
+
+
+// Pepijn: added:
+function moveBack() {
+window.location.href='ict4d_700_10004.html';
+}
+
+function moveForward() {
+window.location.href='ict4d_700_10008.html';
+}
+
+
+
+function showAndroidToast(toast) {
+//replace with pageid, if > 1 display else ignore, no popup on this page
+//Android.showToast("10005", toast);
+}
+
+function displayAlert() {
+Android.displayHomeClosePopup();
+}
+
+function inspectLang(){
+currentUrl = document.URL;
+
+if(currentUrl.indexOf("lang=nl")>0){
+//toggle dutch
+lang='nl';
+document.getElementById("en").style.display = 'none';
+document.getElementById("nl").style.display = 'block';
+// remove for se - document.getElementById("se").style.display = 'none';
+
+}else if(currentUrl.indexOf("lang=se")>0){
+//toggle swedish
+lang='se';
+document.getElementById("en").style.display = 'none';
+document.getElementById("nl").style.display = 'none';
+// remove for se - document.getElementById("se").style.display = 'block';
+
+}else if(currentUrl.indexOf("lang=en")>0){
+//toggle english
+lang='en';
+document.getElementById("en").style.display = 'block';
+document.getElementById("nl").style.display = 'none';
+//document.getElementById("se").style.display = 'none';
+}else{
+//the language set at the beginning
+var lang1 = Android.getLang();
+lang=lang1;
+window.location.href=currentUrl;
+}
+}
+
+function displayAlert1() {
+Android.displayAlert("calendar");
+}
+
+function moduleHome(){
+return 'ict4d_700_10001.html';
+}
+
+function navigate(url){
+window.location.href=url;
+}
+
+function getDocHeight(){
+ 
+var documentBody = document.getElementById('w1').offsetHeight;
+var windowHeight = window.innerHeight;
+
+if(documentBody>windowHeight-8){
+}else{
+document.getElementById('footer').style.position="absolute";
+document.getElementById('footer').style.bottom="1";
+}
+}
+
+//file content from server
+fileContent = Android.returnFileContent("10005").toString();
+
+var documentMaxHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+</script>
+
+<style>
+.greenleftarrow{
+position: absolute;
+z-index:10;
+background:#fff url(./images/greenleftarrow.jpg) no-repeat;
+left:20px;
+top:150px;
+height:140px;
+opacity:0.2;filter:alpha(opacity=20)
+}
+
+</style>
+</head>
+
+<body id="body1" onload="javascript:inspectLang(); getDocHeight()">
+<!-- this is the page content part here -->
+<div id="header"  
+>
+		 <a href="#" onclick="javascript:displayAlert();"><h1 class="logo"><img src="../images/logo.png" width=45 height=45 /></h1></a>
+		 <div class="page_title">
+	<a href="javascript:window.location.href='../ict4d_index.html';">MoodBuster</a></div>
+		 <ul class="top-right">
+			 <li><a href="javascript:window.location.href='ict4d_700_10001.html';" title="Go up one level"><img src="../images/icon_levelup.png" width="30" height="40" alt="Go up one level"></a></li>
+		</ul>
+	</div>
+<!-- BEGIN English -->
+	<div id="en" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_700_10001.html'">Help</a> (4/5)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Moodbuster Help</div><div class="textPage"> 
+
+			<h1>Symbols</h1> 
+You will encounter the following symbols throughout the application: <br/>
+<table border="1">
+<tr>
+<td><img src="../images/logo.png" width=45 height=45 /></td>
+<td><img src="../images/help.png" width="50" height="50" alt="Help"></td>
+<td><img src="../images/icon_cal.png" width="30" height="40"> </td>
+<td><img src="../images/icon_diary.png" width="30" height="40"> </td>
+<td><img src="../images/icon_levelup.png" width="30" height="40"> </td>
+</tr>
+</table> 
+<br/>
+
+From left to right: <br/>
+The <span style="text-decoration:underline"><strong>Moodbuster Logo</strong></span> can be used to return to the home screen or exit the application. The <span style="text-decoration:underline"><strong>Help page quick link</strong></span> leads to this help file. The <span style="text-decoration:underline"><strong>Calendar quick link</strong></span> can be used to start the calendar, which is also available from the home screen. The same holds for the <span style="text-decoration:underline"><strong>Progress quick link</strong></span> which leads to an overview of the exercises performed in each module. The <span style="text-decoration:underline"><strong>Up button</strong></span> brings you one level higher in the module and is described in more detail on <a href="ict4d_700_10003.html">page 3</a>.</div><!-- END <div class=textPage --></div><!-- END English -->
+
+<!-- BEGIN Dutch -->
+	<div id="nl" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_700_10001.html'">Hulp</a> (4/5)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Hulp?</div><div class="textPage"> 
+
+			<h1>Symbolen</h1> 
+U zult de volgende symbolen tegenkomen in deze applicatie: <br/>
+<table border="1">
+<tr>
+<td><img src="../images/logo.png" width=45 height=45 /></td>
+<td><img src="../images/icon_levelup.png" width="30" height="40"> </td>
+</tr>
+</table> 
+<br/>
+
+U kunt op het <span style="text-decoration:underline"><strong>Moodbuster Logo</strong></span> drukken om naar het hoofdscherm van de applicatie te gaan of om de applicatie af te sluiten. De <span style="text-decoration:underline"><strong>Omhoog knop</strong></span> brengt u een niveau hoger in de module en deze knop wordt in meer detail beschreven op <a href="ict4d_700_10003.html">pagina  3</a>.
+
+<div id="exercise">
+Ook zult u beschrijvingen van oefeningen tegenkomen in dit groene kader. Dit betekent dat u de desbetreffende oefening in de PC versie van Moodbuster moet uitvoeren. </div><!-- END <div class=textPage --></div><!-- END Dutch -->
+
+<!-- BEGIN Swedish -->
+	<div id="se" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_700_10001.html'"></a> (4/5)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Moodbuster Hjälp</div><div class="textPage"> 
+
+			<h1>Symboler</h1> 
+Du kommer att stÃ¶tta pÃ¥ fÃ¶ljande symboler genom applikationen: <br/>
+<table border="1">
+<tr>
+<td><img src="../images/logo.png" width=45 height=45 /></td>
+<td><img src="../images/help.png" width="50" height="50" alt="Help"></td>
+<td><img src="../images/icon_cal.png" width="30" height="40"> </td>
+<td><img src="../images/icon_diary.png" width="30" height="40"> </td>
+<td><img src="../images/icon_levelup.png" width="30" height="40"> </td>
+</tr>
+</table> 
+<br/>
+
+FrÃ¥n vÃ¤nster till hÃ¶ger: <br/>
+<span style="text-decoration:underline"><strong>Moodbusterlogotypen</strong></span> kan anvÃ¤ndas fÃ¶r att Ã¥tervÃ¤nda till hemskÃ¤rmen eller stÃ¤nga ner applikationen. <span style="text-decoration:underline"><strong>HjÃ¤lpsidans snabblÃ¤nk</strong></span> leder till denna hjÃ¤lpfil. <span style="text-decoration:underline"><strong>snabblÃ¤nken fÃ¶r Kalendern</strong></span> kan anvÃ¤ndas fÃ¶r att komma Ã¥t kalendern, som Ã¤ven kan nÃ¥s ifrÃ¥n hemskÃ¤rmen. Samma sak gÃ¤ller <span style="text-decoration:underline"><strong>snabblÃ¤nken fÃ¶r Framsteg</strong></span> som leder till en Ã¶versikt av Ã¶vningarna som utfÃ¶rs i varje modul. <span style="text-decoration:underline"><strong>Uppknappen</strong></span> fÃ¶r dig en nivÃ¥ hÃ¶gre upp i modulen och beskrivs i mer detalj pÃ¥ <a href="ict4d_700_10003.html">sida 3</a>.
+</div><!-- END <div class=textPage --></div><!-- END Swedish -->
+<div id="footer"></div>
+	</body>
+	</html>

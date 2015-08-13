@@ -1,0 +1,196 @@
+<html> 
+
+		<head> 
+
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+
+
+			<title>Cognitive restructuring</title>
+
+			<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all">
+
+			<script type="text/javascript">
+
+	// Global variables
+			var lang = 'en';
+		window.addEventListener('touchstart',function(event) {
+
+			 document.getElementById('greenleftarrow').style.display= "block";
+
+	},false);
+
+
+	window.addEventListener('touchmove',function(event) {
+
+	},false);
+ 
+
+
+	window.addEventListener('touchend',function(event) {
+
+
+		document.getElementById('greenleftarrow').style.display= "none";
+
+	},false);
+
+
+function startExercise(ex){
+Android.startExercise(ex);
+}
+
+
+function showVideoFromModule(name){
+Android.showVideoFromModule(name);
+}
+
+
+
+
+// Pepijn: added:
+function moveBack() {
+window.location.href='ict4d_212_21262.html';
+}
+
+function moveForward() {
+window.location.href='ict4d_212_21264.html';
+}
+
+
+
+function showAndroidToast(toast) {
+//replace with pageid, if > 1 display else ignore, no popup on this page
+//Android.showToast("21263", toast);
+}
+
+function displayAlert() {
+Android.displayHomeClosePopup();
+}
+
+function inspectLang(){
+currentUrl = document.URL;
+
+if(currentUrl.indexOf("lang=nl")>0){
+//toggle dutch
+lang='nl';
+document.getElementById("en").style.display = 'none';
+document.getElementById("nl").style.display = 'block';
+// remove for se - document.getElementById("se").style.display = 'none';
+
+}else if(currentUrl.indexOf("lang=se")>0){
+//toggle swedish
+lang='se';
+document.getElementById("en").style.display = 'none';
+document.getElementById("nl").style.display = 'none';
+// remove for se - document.getElementById("se").style.display = 'block';
+
+}else if(currentUrl.indexOf("lang=en")>0){
+//toggle english
+lang='en';
+document.getElementById("en").style.display = 'block';
+document.getElementById("nl").style.display = 'none';
+//document.getElementById("se").style.display = 'none';
+}else{
+//the language set at the beginning
+var lang1 = Android.getLang();
+lang=lang1;
+window.location.href=currentUrl;
+}
+}
+
+function displayAlert1() {
+Android.displayAlert("calendar");
+}
+
+function moduleHome(){
+return 'ict4d_212_21262.html';
+}
+
+function navigate(url){
+window.location.href=url;
+}
+
+function getDocHeight(){
+ 
+var documentBody = document.getElementById('w1').offsetHeight;
+var windowHeight = window.innerHeight;
+
+if(documentBody>windowHeight-8){
+}else{
+document.getElementById('footer').style.position="absolute";
+document.getElementById('footer').style.bottom="1";
+}
+}
+
+//file content from server
+fileContent = Android.returnFileContent("21263").toString();
+
+var documentMaxHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+</script>
+
+<style>
+.greenleftarrow{
+position: absolute;
+z-index:10;
+background:#fff url(./images/greenleftarrow.jpg) no-repeat;
+left:20px;
+top:150px;
+height:140px;
+opacity:0.2;filter:alpha(opacity=20)
+}
+
+</style>
+</head>
+
+<body id="body1" onload="javascript:inspectLang(); getDocHeight()">
+<!-- this is the page content part here -->
+<div id="header"  
+>
+		 <a href="#" onclick="javascript:displayAlert();"><h1 class="logo"><img src="../images/logo.png" width=45 height=45 /></h1></a>
+		 <div class="page_title">
+	<a href="javascript:window.location.href='../ict4d_index.html';">MoodBuster</a></div>
+		 <ul class="top-right">
+			 <li><a href="javascript:window.location.href='ict4d_212_21262.html';" title="Go up one level"><img src="../images/icon_levelup.png" width="30" height="40" alt="Go up one level"></a></li>
+		</ul>
+	</div>
+<!-- BEGIN English -->
+	<div id="en" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_212_21031.html'">Psycho Education</a> (37/43)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Overview of the modules</div><div class="textPage"> 
+
+			<h1>Cognitive restructuring</h1> 
+Here you will learn how your thoughts are connected to your depression. The first part of the module is focused solely on this connection, and you will learn about the concept of negative cognitions/automatic thoughts. An introduction is given on learning how to observe these thoughts, which in turn the second part is building upon. The next step is learning to alter your thinking patterns, i.e. challenging our negative thoughts. </div><!-- END <div class=textPage --></div><!-- END English -->
+
+<!-- BEGIN Dutch -->
+	<div id="nl" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_212_21031.html'">Psycho-Educatie</a> (37/43)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Overzicht modules</div><div class="textPage"> 
+
+			<h1>Cognitieve therapie</h1> 
+<p>U hebt negatieve gedachten over uzelf, over de toekomst, of over mensen om uw heen.</p> <p>Deze negatieve gedachten hebben invloed op uw stemming.</p> <p>In deze module leert u negatieve gedachten op te sporen. U krijgt inzicht in de manier waarop uw stemming beÃ¯nvloed wordt door uw gedachten.&nbsp;</p> <p>Daarna leert u stap voor stap om met negatieve gedachten om te gaan.</p></div><!-- END <div class=textPage --></div><!-- END Dutch -->
+
+<!-- BEGIN Swedish -->
+	<div id="se" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_212_21031.html'"></a> (37/43)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Översikt av modulerna</div><div class="textPage"> 
+
+			<h1>Kognitiv omstrukturering</h1> 
+I den hÃ¤r modulen kommer du att fÃ¥ lÃ¤ra dig hur dina tankar Ã¤r sammankopplade med din depression. Den fÃ¶rsta delen i modulen fokuserar enbart pÃ¥ den kopplingen och du kommer att fÃ¥ veta mer om begreppet negativa automatiska tankar. En introduktion ges om hur man kan lÃ¤ra sig att observera dessa tankar, vilket du sedan fÃ¥r gÃ¶ra i modulens andra del. Steget dÃ¤refter Ã¤r att lÃ¤ra sig att fÃ¶rÃ¤ndra sina tankemÃ¶nster, till exempel genom att utmana sina negativa automatiska tankar.<br /><br /></div><!-- END <div class=textPage --></div><!-- END Swedish -->
+<div id="footer"></div>
+	</body>
+	</html>

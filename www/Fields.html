@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Fields</title>
+
+<link rel="stylesheet" href="CMS.css" />
+
+<script type="text/javascript">
+
+function allowDrop(ev){
+	ev.preventDefault();	
+}
+
+function dragenter(ev){
+
+     ev.preventDefault();
+     ev.style.background = "SkyBlue";
+     
+}
+
+function drag(ev){
+	ev.dataTransfer.setData("content", ev.target.id);
+}
+
+function drop(ev){
+	ev.preventDefault();
+	var image= ev.dataTransfer.getData("content");
+	ev.target.appendChild(document.getElementById(image));
+}
+
+</script>
+
+
+</head>
+
+<body>
+
+
+
+<div id ="container">
+<div class ="quad" id ="leftBox">  
+    <div class="inner" id="l1" ondrop="drop(event)" ondragover="allowDrop(event)">Div 1</div>
+    <div class="inner" id="l2" ondrop="drop(event)" ondragover="allowDrop(event)">Div 2</div>
+    <div class="inner" id="l3" ondrop="drop(event)" ondragover="allowDrop(event)">Div 3</div>
+    <div class="inner" id="l4" ondrop="drop(event)" ondragover="allowDrop(event)">Div 4</div>
+    
+</div>
+
+
+<!--<div class ="quad" id ="rightBox">
+	<div class="inner" id="r1" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/Guitar.jpg" alt="Guitar" id="Guitar" draggable="true" ondragstart="drag(event)"/></div>
+    <div class="inner" id="r2" ondrop="drop(event)" ondragover="allowDrop(event)">Box 2</div>
+    <div class="inner" id="r3" ondrop="drop(event)" ondragover="allowDrop(event)">Box 3</div>
+    <div class="inner" id="r4" ondrop="drop(event)" ondragover="allowDrop(event)">Box 4</div>
+</div>
+-->
+
+
+<div class ="quad" id="bottomLeftBox">
+ 	<div class="inner" id="bl4" ondrop="drop(event)" ondragover="allowDrop(event)">Div A1</div>
+    <div class="inner" id="bl4" ondrop="drop(event)" ondragover="allowDrop(event)">Div A2</div>
+    <div class="inner" id="bl4" ondrop="drop(event)" ondragover="allowDrop(event)">Div A3</div>
+    <div class="inner" id="bl4" ondrop="drop(event)" ondragover="allowDrop(event)">Div A4</div>
+</div>
+
+<!--<div class ="quad" id="bottomRightBox">
+ 	<div class="inner" id="br4" ondrop="drop(event)" ondragover="allowDrop(event)">Div B1</div>
+    <div class="inner" id="br4" ondrop="drop(event)" ondragover="allowDrop(event)">Div B2</div>
+    <div class="inner" id="br4" ondrop="drop(event)" ondragover="allowDrop(event)">Div B3</div>
+    <div class="inner" id="br4" ondrop="drop(event)" ondragover="allowDrop(event)">Div B4</div>
+</div>
+</div>
+-->
+
+<!--
+<div id ="imageSelect">
+
+<div id ="imageSelect1">
+</div>
+<div id ="imageSelect2">
+</div>
+<div id ="imageSelect3">
+</div>
+<div id ="imageSelect4">
+</div>
+
+</div>
+-->
+</body>
+</html>

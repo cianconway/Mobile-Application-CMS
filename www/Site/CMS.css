@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+  width: 530px;
+  height: 1080px;	
+  border: solid green;
+  border-width: 3px;
+}
+
+
+.quad {
+  float: left;
+  height: 518px;
+  width: 518px;
+  border: solid red;
+  border-width: 3px;
+}
+
+.inner {
+	float: left;
+	height: 252px;
+	width: 252px;
+	border: solid black;
+	border-width: 3px;
+}
+
+.longBox {
+float: right;
+border: blue;
+width: 260px;
+height: 1080px;
+border-width: 3px;
+}

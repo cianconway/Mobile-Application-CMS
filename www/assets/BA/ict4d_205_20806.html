@@ -1,0 +1,196 @@
+<html> 
+
+		<head> 
+
+			<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+
+
+			<title>Exercise 7: Activities to do more and less often</title>
+
+			<link href="../css/layout.css" rel="stylesheet" type="text/css" media="all">
+
+			<script type="text/javascript">
+
+	// Global variables
+			var lang = 'en';
+		window.addEventListener('touchstart',function(event) {
+
+			 document.getElementById('greenleftarrow').style.display= "block";
+
+	},false);
+
+
+	window.addEventListener('touchmove',function(event) {
+
+	},false);
+ 
+
+
+	window.addEventListener('touchend',function(event) {
+
+
+		document.getElementById('greenleftarrow').style.display= "none";
+
+	},false);
+
+
+function startExercise(ex){
+Android.startExercise(ex);
+}
+
+
+function showVideoFromModule(name){
+Android.showVideoFromModule(name);
+}
+
+
+
+
+// Pepijn: added:
+function moveBack() {
+window.location.href='ict4d_205_20805.html';
+}
+
+function moveForward() {
+window.location.href='ict4d_205_20807.html';
+}
+
+
+
+function showAndroidToast(toast) {
+//replace with pageid, if > 1 display else ignore, no popup on this page
+//Android.showToast("20806", toast);
+}
+
+function displayAlert() {
+Android.displayHomeClosePopup();
+}
+
+function inspectLang(){
+currentUrl = document.URL;
+
+if(currentUrl.indexOf("lang=nl")>0){
+//toggle dutch
+lang='nl';
+document.getElementById("en").style.display = 'none';
+document.getElementById("nl").style.display = 'block';
+// remove for se - document.getElementById("se").style.display = 'none';
+
+}else if(currentUrl.indexOf("lang=se")>0){
+//toggle swedish
+lang='se';
+document.getElementById("en").style.display = 'none';
+document.getElementById("nl").style.display = 'none';
+// remove for se - document.getElementById("se").style.display = 'block';
+
+}else if(currentUrl.indexOf("lang=en")>0){
+//toggle english
+lang='en';
+document.getElementById("en").style.display = 'block';
+document.getElementById("nl").style.display = 'none';
+//document.getElementById("se").style.display = 'none';
+}else{
+//the language set at the beginning
+var lang1 = Android.getLang();
+lang=lang1;
+window.location.href=currentUrl;
+}
+}
+
+function displayAlert1() {
+Android.displayAlert("calendar");
+}
+
+function moduleHome(){
+return 'ict4d_205_20794.html';
+}
+
+function navigate(url){
+window.location.href=url;
+}
+
+function getDocHeight(){
+ 
+var documentBody = document.getElementById('w1').offsetHeight;
+var windowHeight = window.innerHeight;
+
+if(documentBody>windowHeight-8){
+}else{
+document.getElementById('footer').style.position="absolute";
+document.getElementById('footer').style.bottom="1";
+}
+}
+
+//file content from server
+fileContent = Android.returnFileContent("20806").toString();
+
+var documentMaxHeight = Math.max( body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+</script>
+
+<style>
+.greenleftarrow{
+position: absolute;
+z-index:10;
+background:#fff url(./images/greenleftarrow.jpg) no-repeat;
+left:20px;
+top:150px;
+height:140px;
+opacity:0.2;filter:alpha(opacity=20)
+}
+
+</style>
+</head>
+
+<body id="body1" onload="javascript:inspectLang(); getDocHeight()">
+<!-- this is the page content part here -->
+<div id="header"  
+>
+		 <a href="#" onclick="javascript:displayAlert();"><h1 class="logo"><img src="../images/logo.png" width=45 height=45 /></h1></a>
+		 <div class="page_title">
+	<a href="javascript:window.location.href='../ict4d_index.html';">MoodBuster</a></div>
+		 <ul class="top-right">
+			 <li><a href="javascript:window.location.href='ict4d_205_20794.html';" title="Go up one level"><img src="../images/icon_levelup.png" width="30" height="40" alt="Go up one level"></a></li>
+		</ul>
+	</div>
+<!-- BEGIN English -->
+	<div id="en" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_205_20782.html'">Behavioural Activation</a> (23/30)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Step 3: Change Yourself</div><div class="exercisePage"> 
+
+				<h1>Exercise 7: Activities to do more and less often</h1> 
+Let's increase your pleasant activities and decrease your unpleasant activities. Take a look at your list of activities again.<br /><ul><li>Take the ones you like but almost never perform and add these to your calendar.</li><li>Try to add other or new pleasant activities.</li><li>Also add other unpleasant activities</li><li>If necessary, adapt your goal.</li><li>Add all activities to your calendar.</li></ul><br /><br />Carry out your (new) planning  Please perform this exercise in the PC version of Moodbuster.</div><!-- END <div class=exercisePage --></div><!-- END English -->
+
+<!-- BEGIN Dutch -->
+	<div id="nl" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_205_20782.html'">Plezierige Activiteiten</a> (23/30)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Stap 3: Veranderen</div><div class="exercisePage"> 
+
+				<h1>Oefening 7: Meer plezierige activiteiten</h1> 
+<p>Laten we het aantal leuke bezigheden verhogen.</p><ul> <li> Ga naar uw lijst met leuke bezigheden.</li> <li> Voeg nog een paar nieuwe activiteiten toe aan uw lijst.</li> <li> Plan voor de komende week: nieuwe activiteiten en activiteiten van uw lijst die u bijna nooit doet.</li> <li> Stel zo nodig uw doel bij zodat het haalbaar is.</li> <li> Voer uw nieuwe planning uit. </li> </ul></div><!-- END <div class=exercisePage --></div><!-- END Dutch -->
+
+<!-- BEGIN Swedish -->
+	<div id="se" style="display: none; clear:both">
+	 <div id ="pageinformation" style="width:100%; left:0; "> 
+
+			 <div id="pageXofY" class="pageXofY"><a href="javascript:window.location.href='ict4d_205_20782.html'"></a> (23/30)</div> 
+
+			 <div style="clear: both;"></div> 
+
+		 </div>	 <div class="chapter_heading">Steg 3: Förändra dig själv</div><div class="exercisePage"> 
+
+				<h1>Ãvning 7: Aktiviteter att gÃ¶ra oftare och mer sÃ¤llan</h1> 
+FÃ¶rsÃ¶k nu att Ã¶ka de positiva aktiviteterna och minska de du tycker mindre om. Ta en titt pÃ¥ listan Ã¶ver aktiviteter igen.<br /><ul><li>Notera vilka positiva aktiviteter du nÃ¤stan aldrig utfÃ¶r.</li><li>FÃ¶rsÃ¶k lÃ¤gga till andra eller nya positiva aktiviteter.</li><li>LÃ¤gg ocksÃ¥ till fler aktiviteter som du inte gillar.</li><li>Om det Ã¤r nÃ¶dvÃ¤ndigt, Ã¤ndra dina mÃ¥l.</li><li>LÃ¤gg in alla aktiviteterna i din kalender.</li></ul>BÃ¶rja leva efter din plan. UtfÃ¶r denna Ã¶vning i PC-versionen av Moodbuster.</div><!-- END <div class=exercisePage --></div><!-- END Swedish -->
+<div id="footer"></div>
+	</body>
+	</html>

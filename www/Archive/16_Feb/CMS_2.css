@@ -1,0 +1,58 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+#container{
+  float: left;
+  height: 1000px;
+  width: 1000px;
+  border: solid green;
+}
+
+#top div{
+
+float:left;
+height: 500px;
+width: 500px;
+}
+
+#bottom div{
+
+float:left;
+height: 500px;
+width: 500px;
+}
+
+
+#imageSelect{
+	float:left;
+	height: 1100px;
+	width: 270px;
+	border: solid red;
+}
+
+#imageSelect1{
+	float:left;
+	height: 250px;
+	width: 250px;
+}
+
+#imageSelect2{
+	float:left;
+	height: 250px;
+	width: 250px;
+}
+
+#imageSelect3{
+	float:left;
+	height: 250px;
+	width: 250px;
+}
+
+#imageSelect4{
+	float:left;
+	height: 250px;
+	width: 250px;
+}/* CSS Document */
+

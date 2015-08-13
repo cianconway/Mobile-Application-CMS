@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+#container {
+  width: 1041px;
+  height: 1041px;	
+  border: solid purple;
+  border-width: 3px;
+}
+
+
+.quad {
+  float: left;
+  height: 515px;
+  width: 515px;
+  border: solid red;
+  border-width: 3px;
+}
+
+.inner {
+	float: left;
+	height: 252px;
+	width: 252px;
+	border: solid blue;
+	border-width: 3px;
+}

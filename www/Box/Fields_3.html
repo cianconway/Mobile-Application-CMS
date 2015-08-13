@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Text</title>
+
+
+<link rel="stylesheet" href="CMS.css" />
+
+<script type="text/javascript">
+
+function allowDrop(ev){
+	ev.preventDefault();	
+}
+
+function dragenter(ev){
+
+     ev.preventDefault();
+     ev.style.background = "SkyBlue";
+     
+}
+
+function drag(ev){
+	ev.dataTransfer.setData("content", ev.target.id);
+}
+
+function drop(ev){
+	ev.preventDefault();
+	var image= ev.dataTransfer.getData("content");
+	ev.target.appendChild(document.getElementById(image));
+}
+
+</script>
+<header>
+<img src="images/header/header.png" />
+</header>
+<a href="Welcome.html">Home</a>
+</head>
+
+
+
+<body>
+
+<div id ="container">
+<div class ="quad" id ="leftBox" ondrop="drop(event)" ondragover="allowDrop(event)">  
+        
+</div>
+
+
+<div class ="quad" id="bottomLeftBox">
+</div>
+
+
+
+</div>
+
+<!--
+<div id ="imageSelect" class="longBox">
+
+<div id ="imageSelect1" class="inner" ondrop="drop(event)" ondragover="allowDrop(event)"><img src="images/arcticMonkeys.jpg" alt="Guitar" id="Guitar" draggable="true" ondragstart="drag(event)"/>
+</div>
+<div id ="imageSelect2" class="inner"><img src="images/suckItAndSee.jpg" alt="image2" id="image2" height="250px" width="250px" draggable="true" ondragstart="drag(event)"/>
+</div>
+<div id ="imageSelect3" class="inner"><img src="images/whateverPeopleSayIAm.jpg" alt="image3" id="image3" height="250px" width="250px" draggable="true" ondragstart="drag(event)"/>
+</div>
+<div id ="imageSelect4" class="inner"><img src="images/am.jpg" alt="image4" id="image4" height="250px" width="250px" draggable="true" ondragstart="drag(event)"/>
+</div>
+<div id ="imageSelect5" class="inner"><img src="images/am.jpg" alt="image4" id="image5" height="250px" width="250px" draggable="true" ondragstart="drag(event)"/>
+</div>
+<div id ="imageSelect6" class="inner"><img src="images/am.jpg" alt="image4" id="image6" height="250px" width="250px" draggable="true" ondragstart="drag(event)"/>
+</div>
+<div id ="imageSelect7" class="inner"><img src="images/am.jpg" alt="image4" id="image7" height="250px" width="250px" draggable="true" ondragstart="drag(event)"/>
+</div>
+<div id ="imageSelect8" class="inner"><img src="images/am.jpg" alt="image4" id="image8" height="250px" width="250px" draggable="true" ondragstart="drag(event)"/>
+</div>
+-->
+
+</div>
+
+</body>
+</html>
