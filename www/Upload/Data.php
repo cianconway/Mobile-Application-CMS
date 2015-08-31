@@ -6,6 +6,8 @@
 </head>
 
 <body>
+	
+	<!--upload page for the CMS where images can be uploaded. Raw SQL embedded in file determining where in DB files are stored -->
 
 <?php
 
