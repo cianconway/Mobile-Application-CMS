@@ -1,5 +1,7 @@
 # Mobile-Application-CMS
 
+### [Click here for Thesis Report](https://www.academia.edu/6652747/Mobile_Application_Content_Management_System)
+
 Content management systems are programs which allow users to publish edit and modify existing content on their websites, with the growing use of mobile devices the implementation of content management systems for mobile use is in ever increasing demand. The front end of the system (Content management application) allows the user to add modify and remove content with limited technical expertise thereby reducing the need for hand coding. The mobile app content management system was developed in php and html with key drag and drop functionality being created through JavaScript. The final system offers robust features allowing the user to display, create, manage and store content on a web page. This system offers users the ability to tailor their web pages for a mobile environment and easily manage content.<br><br>
 
 
